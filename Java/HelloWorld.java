@@ -1,6 +1,6 @@
 public class HelloWorld {
   public static void main(String[] args) {
-    System.out.println("Exercício de combustivel");
+    System.out.println("Exercício de combustivel - Aletrado por Thiago");
 
     double distancia = 0;
     double litros = 0;
