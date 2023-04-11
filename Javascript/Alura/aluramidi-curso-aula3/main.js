@@ -1,29 +1,41 @@
-function tocaSom (idElementAudio) {
-
-    document.querySelector(idElementAudio).play();
+function tocaSom (seletorAudio) {
+    const elemento = document.querySelector(seletorAudio);
+     //identificar o tipo do elemento e se não for nulo = play se não console.log()
+    if (elemento != null && elemento.localName === 'audio'){ 
+         elemento.play();
+    }
+    else{
+        console.log('Elemento não encontrado ou seletor inválido')
+    }
 }
 
-const listaDeTeclas = document.querySelectorAll('.tecla');
+    //atribuição de todos os elementos com classe id '.tecla' dentro de uma lista 
+const listaDeTeclas = document.querySelectorAll(".tecla");
 
-let contador = 0; 
-
-//enquanto
-while (contador < listaDeTeclas.length) {
-
-    const tecla = listaDeTeclas[contador];
-    const instrumento = tecla.classList[1];
-    //template string 
-    const idAudio = `#som_${instrumento}`
-    console.log(idAudio)
-
+    //contador sendo comparado com o tamanho da lista 
+for (let contador = 0; contador < listaDeTeclas.length; contador++) {
     
+    const tecla = listaDeTeclas[contador]
+    //
+    const instrumento = tecla.classList[1]
+    const idAudio = `#som_${instrumento}`; //template string
     
-
-    tecla.onclick = function(){
+    //aplicamos uma rotina para cada elemento ser acessado, acessar o atributo onclick e atribuir uma função que vai tocar o som desejado 
+    tecla.onclick = function () {
         tocaSom(idAudio);
     }
-    
-    contador = contador + 1; 
-    
-    console.log(contador);
+    //quando a tecla "Space" ou "Enter" for detectada para baixo fazer a animação de botao ativo
+    tecla.onkeydown = function (evento) {
+
+        if  (evento.code === "Space" || evento.code === "Enter" ) {
+             tecla.classList.add('ativa');
+        }
+       
+    }
+    //quando as teclas forem levantadas o botão deixa de ter a animação e volta a sua forma inicial
+    tecla.onkeyup = function (){
+        tecla.classList.remove('ativa');
+    }
+
+
 }
