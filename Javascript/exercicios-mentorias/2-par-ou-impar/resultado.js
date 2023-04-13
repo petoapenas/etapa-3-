@@ -7,16 +7,10 @@ function calculo (lista){
         }
         else{
             console.log(`o numero ${numero} é impar papai`)
-            
         }
-        
-        
-
     }
 }
+
 //adcionando valor a lista
 const lista = [2, 3, 6, 8, 25];
 calculo(lista)
-
-
-
