@@ -25,11 +25,11 @@ jobs:
     - name: list files
       run: |
         ls -l
-        cd JavaScript
+        cd Javascript
         echo "changed directory to JavaScript"
         ls -l
     - name: run unit test
-      working-directory: JavaScript
+      working-directory: Javascript
       run: |
         npm install
         npm run test
