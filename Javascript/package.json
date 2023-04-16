@@ -1,0 +1,22 @@
+{
+  "name": "mentoria-javascript",
+  "version": "1.0.0",
+  "description": "Exercícios para prática e aprendizado de JavaScript dos educandos do PAQ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Petoteta/etapa-3-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Petoteta/etapa-3-/issues"
+  },
+  "homepage": "https://github.com/Petoteta/etapa-3-#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
