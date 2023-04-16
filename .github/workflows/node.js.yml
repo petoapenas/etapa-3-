@@ -22,8 +22,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
-    - name: test
-      run: echo "test"
+    - name: list files
+      run: ls -l
     - name: run unit test
       working-directory: JavaScript
       run: |
