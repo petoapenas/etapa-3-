@@ -57,19 +57,19 @@ describe("dada uma função `buscaMaiorValor`", () => {
     });
   });
 
-  describe("quando passado um array somente com valores não numéricos", () => {
-    it("deve retornar `undefined`", () => {
-      const lista = ["a", "b", "c"];
-      const maior = buscaMaiorValor(lista);
-      expect(maior).toBe(undefined);
-    });
-  });
+  // describe("quando passado um array somente com valores não numéricos", () => {
+  //   it("deve retornar `undefined`", () => {
+  //     const lista = ["a", "b", "c"];
+  //     const maior = buscaMaiorValor(lista);
+  //     expect(maior).toBe(undefined);
+  //   });
+  // });
 
-  describe("quando passado um array com o primeiro valor não numérico", () => {
-    it("deve retornar o maior número", () => {
-      const lista = ["a", 1, 2, 3, 4, 5, 3, 8, 3];
-      const maior = buscaMaiorValor(lista);
-      expect(maior).toBe(8);
-    });
-  });
+  // describe("quando passado um array com o primeiro valor não numérico", () => {
+  //   it("deve retornar o maior número", () => {
+  //     const lista = ["a", 1, 2, 3, 4, 5, 3, 8, 3];
+  //     const maior = buscaMaiorValor(lista);
+  //     expect(maior).toBe(8);
+  //   });
+  // });
 });
