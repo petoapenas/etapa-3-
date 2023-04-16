@@ -25,7 +25,7 @@ jobs:
     - name: test
       run: echo "test"
     - name: run unit test
-      working-directory: ./JavaScript
+      working-directory: JavaScript
       run: |
         npm install
         npm run test
