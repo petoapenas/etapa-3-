@@ -23,7 +23,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
     - name: list files
-      run: ls -l
+      run: |
+        ls -l
+        cd JavaScript
+        echo "changed directory to JavaScript"
+        ls -l
     - name: run unit test
       working-directory: JavaScript
       run: |
