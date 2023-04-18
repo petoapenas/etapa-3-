@@ -1,5 +1,5 @@
 function buscaMaiorValor(listaDeNumeros) {
-  let maiorNumero = listaDeNumeros[0];
+  let maiorNumero = filtraNumeros(listaDeNumeros)[0];
 
   for (let i = 0; i < listaDeNumeros.length; i++) {
     if (listaDeNumeros[i] > maiorNumero) {
@@ -7,6 +7,10 @@ function buscaMaiorValor(listaDeNumeros) {
     }
   }
   return maiorNumero;
+}
+
+function filtraNumeros(lista) {
+  return lista.filter((valor) => typeof valor === "number");
 }
 
 module.exports = { buscaMaiorValor };
