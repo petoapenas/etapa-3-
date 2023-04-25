@@ -33,14 +33,16 @@ Exemplo de entrada::
 ```
 
 Saída esperada:
-```js
+```
+Produtos: Arroz, Feijão, Macarrão
 Total gasto: R$ 37
+Custo médio por produto: R$ 12.33
 ```
 
 Explicação:
 ```
 Arroz: R$ 10.00 * 2 = R$ 20
 Feijão: R$ 5 * 1 = R$ 5
-Leite: R$ 4 * 3 = R$ 12
+Macarrão: R$ 4 * 3 = R$ 12
 R$ 20 + R$ 5 + R$ 12 = R$ 37
 ```
