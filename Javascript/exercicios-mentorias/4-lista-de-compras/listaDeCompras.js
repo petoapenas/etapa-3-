@@ -16,8 +16,6 @@ let listaDecompras = [
   },
 ];
 
-//console.log(listaDecompras[0].quantidade)
-
 var totalGasto = 0;
 var todosProdutos = "";
 for (let i = 0; i < listaDecompras.length; i++) {
@@ -27,7 +25,6 @@ for (let i = 0; i < listaDecompras.length; i++) {
   var totalDoItem = preco * quantidade;
   totalGasto = totalGasto + totalDoItem;
   todosProdutos = todosProdutos + produto + " ";
-  // console.log(`o total gasto com ${produto} foi R$ ${totalDoItem}`);
 }
 console.log(`Total gasto foi: R$ ${totalGasto}`);
 
